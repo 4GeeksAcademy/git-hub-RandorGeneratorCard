@@ -1,14 +1,35 @@
 /* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+body {
+  background: green;
+}
 #cardGenerator {
   text-align: center;
   margin-top: 50px;
 }
+#cardContainer {
+  perspective: 1000px;
+}
 
-.card {
-  width: 200px;
-  height: 300px;
-  border: 1px solid #000;
-  margin: 20px;
-  padding: 10px;
-  display: inline-block;
+#cardImage {
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
+
+#cardContainer:hover #cardImage {
+  transform: rotateY(180deg);
+}
+#btn {
+  margin-right: 100%;
+  background: black;
+  color: azure;
+  border-radius: 20%;
+  border-color: blue;
+}
+#InterV {
+  margin-right: 60%;
+
+  font-weight: 100;
+  margin-left: 70%;
 }
